@@ -9,7 +9,7 @@ class BranchView {
     }
 
     public String getSafeBranchName() {
-        return branchName.replaceAll('/', '_')
+        return branchName.replaceAll("[^a-zA-Z0-9_-]", "_")
     }
 
 
